@@ -1,4 +1,5 @@
 <app-task-item 
     *ngFor="let taskElem of tasks" 
-    [taskItem]="taskElem">
-</app-task-item>
+    [taskItem]="taskElem"
+    (onDeleteTask) = "deleteTask(taskElem)"
+></app-task-item>
